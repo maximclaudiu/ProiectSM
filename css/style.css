@@ -1,0 +1,44 @@
+@media screen and (max-width: 910px) {
+    body {
+        width: 885px;
+        background-color: #f2f2f2;
+    }
+}
+.content {
+   	background-color:  #cccccc;
+   	width: 40%;
+    	margin-left:30%;
+    	margin-right:30%;
+   	margin-bottom:20px;
+	padding:10px;
+	border-radius: 5px;
+	
+}
+.anunt {
+	font-size:130%;
+	text-allign: center;
+	width:fit-content;
+	margin:auto;
+	margin-bottom:20px;
+}
+.input {
+	width:fit-content;
+	margin-auto;
+}
+.lista {
+	margin-top:20px;
+}
+body {
+	background-color: #f2f2f2;
+	font-size:120%;
+	
+}
+a {
+    	text-decoration: none;
+    	color: black;
+    	padding:10px;
+    	margin:10px;
+}
+a:visited{
+    	color: black;
+}

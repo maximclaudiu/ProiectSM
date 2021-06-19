@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Server Maxim</title>
+</head>
+<body>
+	<a href="proiect_sm/index.php"> Proiect SM saptamana 8</a>
+	<link rel="stylesheet" href="css/stil.css">
+    <script src="js/script.js"></script>
+</body>
+</html>
