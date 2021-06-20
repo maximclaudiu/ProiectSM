@@ -11,12 +11,13 @@
 	if (array_key_exists('stop', $_POST))
 		stop();
 	function play() {
-		$command = "/var/www/html/proiect_sm/play music/".$_POST["melodie"].".mp3";
+		$command = "/var/www/html/ProiectSM/proiect_sm/play music/".$_POST["melodie"].".mp3";
 		exec("$command > /dev/null 2>/dev/null &");
-	}
+		$message= "Aplicatie reda melodia ".$_POST["melodie"];
+		}
 	function stop() {
 		exec('pidof mpg123', $output, $retval);
-		exec("/var/www/html/proiect_sm/stop $output[0]");
+		exec("/var/www/html/ProiectSM/proiect_sm/stop $output[0]");
 	}
 	?>
 </head>
@@ -30,6 +31,7 @@
 		</form>
 		<div class="lista">
 		<h4>Lista cu melodii:</h4>
+		<p>Numele melodiilor trebuie introdus exact ca in lista de mai jos:</p>
 		<?php
 		$fileList = glob ('music/*');
 		foreach($fileList as $filename)
